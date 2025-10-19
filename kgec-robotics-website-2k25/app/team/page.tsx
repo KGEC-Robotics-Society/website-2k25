@@ -1,4 +1,4 @@
-import MemberCard from '../ui/MemberCard'
+import MemberCard from '../components/MemberCard'
 
 const domainLeads = [
 	{ name: 'Soham Dutta', domain: 'Graphics, Content & PR Team' },
