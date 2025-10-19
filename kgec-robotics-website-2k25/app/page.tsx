@@ -1,3 +1,5 @@
+"use client";
+
 import { useRef, useEffect, useState } from 'react'
 
 // Component to split text into individual letters for animation

@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 
@@ -5,8 +7,8 @@ export default function Projects() {
 	const [query, setQuery] = useState('')
 	const currentRef = useRef<HTMLDivElement>(null)
 	const pastRef = useRef<HTMLDivElement>(null)
-	const currentAutoRef = useRef<number | null>(null)
-	const pastAutoRef = useRef<number | null>(null)
+	const currentAutoRef = useRef<NodeJS.Timeout | null>(null)
+	const pastAutoRef = useRef<NodeJS.Timeout | null>(null)
 
 	useEffect(() => {
 		const startCurrent = () => {
